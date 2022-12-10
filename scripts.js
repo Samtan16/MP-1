@@ -76,7 +76,7 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipment
 
   Pesto = new Recipe(
     "Pesto Pasta",
-    "John Doe",
+    "Lauren",
     "images/pesto.jpg",
     "pesto-ingredients.html",
     "pesto-directions.html"
@@ -105,7 +105,71 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipment
     "chicken-ingredients.html",
     "chicken-directions.html"
   );
- 
+
+  Sloppy = new Recipe(
+    "Sloppy Joes",
+    "Chef John",
+    "images/sloppy.jpg",
+    "sloppy-ingredients.html",
+    "sloppy-directions.html"
+  );
+  
+  Cobb = new Recipe(
+    "Cobb Salad",
+    "Barrett",
+    "images/cobb.jpg",
+    "cobb-ingredients.html",
+    "cobb-directions.html"
+  );
+
+  Apple = new Recipe(
+    "Apple Squares",
+    "Nils",
+    "images/apple.jpg",
+    "apple-ingredients.html",
+    "apple-directions.html"
+  );
+
+  Oya = new Recipe(
+    "Oyakodon",
+    "John Doe",
+    "images/oya.jpg",
+    "oyakodon-ingredients.html",
+    "oyakodon-directions.html"
+  );
+
+  Maple = new Recipe(
+    "Maple Salmon",
+    "Starflower",
+    "images/maple.jpg",
+    "maple-ingredients.html",
+    "maple-directions.html"
+  );
+
+  Tilapia = new Recipe(
+    "Baked Tilapia",
+    "John Doe",
+    "images/tilapia.jpg",
+    "tilapia-ingredients.html",
+    "tilapia-directions.html"
+  );
+
+  Empanadas = new Recipe(
+    "Empanadas",
+    "Goya",
+    "images/empanadas.jpg",
+    "empanadas-ingredients.html",
+    "empanadas-directions.html"
+  );
+
+  Potatoes = new Recipe(
+    "Potatoes",
+    "PonyGirl",
+    "images/potatoes.jpg",
+    "potatoes-ingredients.html",
+    "potatoes-directions.html"
+  );
+
 window.onload = function() {
 
   document.querySelector("#firstRecipe").onclick = function() {
@@ -128,6 +192,30 @@ window.onload = function() {
   }
   document.querySelector("#seventhRecipe").onclick = function() {
     Chicken.displayRecipe();
+  }
+  document.querySelector("#eighthRecipe").onclick = function() {
+    Sloppy.displayRecipe();
+  }
+  document.querySelector("#ninethRecipe").onclick = function() {
+    Cobb.displayRecipe();
+  }
+  document.querySelector("#tenthRecipe").onclick = function() {
+    Apple.displayRecipe();
+  }
+  document.querySelector("#eleventhRecipe").onclick = function() {
+    Oya.displayRecipe();
+  }
+  document.querySelector("#twelvethRecipe").onclick = function() {
+    Maple.displayRecipe();
+  }
+  document.querySelector("#thirteenthRecipe").onclick = function() {
+    Tilapia.displayRecipe();
+  }
+  document.querySelector("#fourteenthRecipe").onclick = function() {
+    Empanadas.displayRecipe();
+  }
+  document.querySelector("#fifteenthRecipe").onclick = function() {
+    Potatoes.displayRecipe();
   }
 
 }
